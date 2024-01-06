@@ -1,12 +1,33 @@
 
-function calc() {
-    // Pegar os valores digitados
+// op => parâmetro
+function calc(op) {
+    // document.getElementById => Pegar os valores digitados
     // parseFloat => Converter o texto pra nº
     var n1 = parseFloat(document.getElementById("numero1").value);
     var n2 = parseFloat(document.getElementById("numero2").value);
 
     // Por na variável
-    var output = n1 + n2;
+    var output = 0;
+
+    switch (op) {
+
+        case '+':
+            output = n1 + n2;
+            break;
+
+        case '-':
+            output = n1 - n2;
+            break;
+
+        case '/':
+            output = n1 / n2;
+            break;
+
+        case '*':
+            output = n1 * n2;
+            break;
+
+    }
 
     // Mostrar o resultado 
     document.getElementById("output").value = output;
