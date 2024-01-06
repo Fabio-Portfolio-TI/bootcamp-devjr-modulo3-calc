@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootcamp-devjr-modulo3-calc</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <input type="number">
-    <input type="number">
-    <button>Somar</button>
-    <input readonly>
+    <div class="container">
+
+        <div class="calc">
+
+            <h1>Calculadora</h1>
+            <input id="numero1" type="number">
+            <input id="numero2" type="number">
+            <button onclick="calc()">Somar</button>
+            <input id="output" type="text" readonly>
+
+        </div> <!-- calc -->
+
+        <div class="history">
+
+        </div> <!-- history -->
+    </div> <!-- container -->
+
+    <script src="javascript,js"></script>
+
 </body>
 </html>
