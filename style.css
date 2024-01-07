@@ -3,12 +3,13 @@ body {
 }
 
 .container {
-    width: 600px;
+    width: 800px;
+    height: 500px;
     background-color: #d3d3d3;
     display: flex;
     /* flex-direction: row; */
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
     padding: 40px;
     border-radius: 4px;
@@ -28,6 +29,12 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.calc-title {
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
 input {
     width: 280px;
     height: 22px;
@@ -35,6 +42,7 @@ input {
     font-size: 1.2rem;
     margin: 15px 70px;
     border-radius: 5px;
+    text-align: right;
 }
 
 /* input[type="number"] => O focus só vai ser utilizado nos inputs tipo 'Texto' */
@@ -58,4 +66,27 @@ button {
 button:hover {
     background-color: #0069d9;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.last-Operations {
+    text-align: right;
+    padding: 10px;
+}
+
+.history-title {
+    display: flex;
+    justify-content: center;
+}
+
+.history {
+    background-color: #000;
+    color: #fff;
+
+    width: 350px;
+
+    /* row-gap/column-gap => espaço entre colunas e linhas  */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

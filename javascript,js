@@ -31,4 +31,17 @@ function calc(op) {
 
     // Mostrar o resultado 
     document.getElementById("output").value = output;
+
+    // Variável pra pegar os dados
+    var newHistory =  "<p>" + n1 + " " + op + " " + n2 + " = " + output + "</p>";
+    var history    = document.getElementById("history");
+
+    // Colocar o resultado no HTML
+    // .innerHTML += "<div>" + output + "</div>";
+     history.innerHTML =  newHistory + history.innerHTML;
+
+     if (history.children.length > 10) {
+        // remover os dados após o 10 cálculo
+        history.removeChild(history.childNodes[10])
+     }
 }
